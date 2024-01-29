@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    background-color: #292c38;
+}
+
+.image{
+    height: 80vh;
+    width: auto;
+    float: right;
+    margin-top: -90vh;
+    margin-right: 15vh;
+}
+
+h1{
+    color: #ffffff;
+    font-family: sans-serif;
+    font-size: 10vh;
+    margin-top: 35vh;
+    margin-left: 15vh;
+}
+
+h2{
+    color: #ffffff;
+    font-family: sans-serif;
+    font-size: 6vh;
+    margin-left: 15vh;
+}
+
+h3{
+    color: #ffffff;
+    font-family: sans-serif;
+    font-size: 4vh;
+    margin-left: 15vh;
+    font-weight: lighter;
+}
+
+p{
+    color: #ffffff;
+    font-family: sans-serif;
+    font-size: 2.5vh;
+    margin-left: 15vh;
+}
+
+
+.cbtn {
+    width: 30vh;
+    height: 5vh;
+    box-shadow: 0px 8px 16px 0px #00000066;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    color: #e4e4e4;
+    text-shadow: 0px 1px 0px #283966;
+    margin-left: 15vh;
+    font-size: 2.5vh;
+    background-color: transparent;
+    margin-top: 2vh;
+    background-color: #292c38;
+    transition: 1s;
+}
+
+.cbtn:hover{
+    transform: scale(1.1);
+    background-color: #292c38;
+}
+
+.footer{
+    width: 100%;
+    height: 10vh;
+    background-color: #252730;
+    color: #ffffff;
+    margin-top: -16vh;
+    text-align: center;
+}
+
+.footer h1{
+    margin-bottom: 0.5vh;
+    font-size: 3vh;
+    padding-top: 1.3vh;
+    margin-left: auto;
+}
+
+.footer p{
+    margin-bottom: 1vh;
+    font-size: 15px;
+    margin-left: auto;
+}

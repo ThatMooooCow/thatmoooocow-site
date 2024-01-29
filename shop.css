@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../img/nightspawn.png');
+    text-align: center;
+}
+
+.header h1 {
+    font-weight: lighter;
+    font-size: 10vh;
+    color: #ffffff;
+    margin-top: 40vh;
+    display: inline-block;
+}
+
+.header p {
+    font-size: 20px;
+    color: #ffffff;
+    margin-top: 30vh;
+    display: inline-block;
+}
+
+.wrapper {
+    width: 100%;
+    height: auto;
+    background-color: #292c38;
+}
+
+.cards {
+    text-align: center;
+    margin-top: 50vh;
+    margin-bottom: 15vh;
+    display: inline-block;
+}
+
+.card {
+    width: 37vh;
+    height: auto;
+    background-color: #1e1f24;
+    border-radius: 20px;
+    box-shadow: 0px 8px 16px 0px #00000066;
+    margin-top: 10vh;
+    display: inline-block;
+    margin-left: 5vh;
+    margin-right: 5vh;
+    cursor: context-menu;
+}
+
+.card .rankicon {
+    width: 12vh;
+    height: auto;
+    background-color: #292c38;
+    border-radius: 100px;
+    box-shadow: 0px 8px 16px 0px #00000066;
+    margin-top: 2vh;
+    margin-bottom: 1vh;
+}
+
+.card h3 {
+    color: #ffffff;
+    font-size: 3vh;
+    margin-bottom: 1px;
+}
+
+.card h5 {
+    color: #ffffff;
+    font-size: 2vh;
+}
+
+.card p {
+    color: #a7a7a7;
+    font-size: 15px;
+    text-align: left;
+    margin-left: 3vh;
+}
+
+i {
+    font-size: 10px;
+    color: #23a3d6;
+    margin-right: 5px;
+}
+
+.card h4 {
+    text-align: center;
+    font-weight: lighter;
+    color: #ffffff;
+    font-size: 14px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3vh;
+}
+
+hr {
+    border: 1px solid #77777766;
+    width: 100%;
+    margin: auto;
+}
+
+.pricetag {
+    background-color: #161515;
+    width: 10vh;
+    height: 3.2vh;
+    border-radius: 5px;
+    text-align: center;
+    color: #ffffff;
+    margin-left: 3vh;
+    float: left;
+    margin-bottom: 3vh;
+}
+
+.buybtn {
+    width: 10vh;
+    height: 3vh;
+    border-radius: 5px;
+    background-color: #161515;
+    color: #ffffff;
+    float: right;
+    margin-right: 3vh;
+    border: none;
+    box-shadow: 0px 8px 16px 0px #00000066;
+    transition: 1s;
+    font-weight: bold;
+}
+
+.buybtn:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.footer {
+    width: 100%;
+    height: 20vh;
+    background-color: #252730;
+    color: #ffffff;
+}
+
+.footer h1 {
+    margin-top: 5vh;
+    display: inline-block;
+    margin-bottom: 1vh;
+}
