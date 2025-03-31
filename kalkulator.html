@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+        .box {
+            border: 1px solid purple;
+            padding: 20px;
+            width: 300px;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <button class="broj">1</button>
+    <button class="broj">2</button>
+    <button class="broj">3</button>
+    <button class="broj">4</button>
+    <button class="broj">5</button>
+    <button class="broj">6</button>
+    <button class="broj">7</button>
+    <button class="broj">8</button>
+    <button class="broj">9</button>
+    <button class="broj">0</button>
+    <button class="broj">.</button>
+    <button class="broj">*</button>
+    <button class="broj">/</button>
+    <button class="broj">+</button>
+    <button class="broj">-</button>
+    <button class="broj">(</button>
+    <button class="broj">)</button>
+
+    <button id="ocisti"><-</button>
+    <button id="jednako">=</button>
+    
+    <p class="box"></p>
+    <script>
+        const rezultBox = document.querySelector(".box");
+        const greska = "Invalid input provided";
+        
+        for(let el of document.getElementsByClassName("broj")) {
+            el.addEventListener("click", () => {
+                if(rezultBox.textContent != greska) {
+                    rezultBox.textContent = rezultBox.textContent + el.textContent;
+                }
+                else {
+                    rezultBox.textContent = el.textContent;
+                }
+            });
+        };
+
+        document.getElementById("jednako").addEventListener("click", () => {
+            try {
+                rezultBox.textContent = eval(rezultBox.textContent);
+            } catch(error) {
+                rezultBox.textContent = greska;
+            }
+        });
+
+        document.getElementById("ocisti").addEventListener("click", () => rezultBox.textContent = "");
+
+
+    </script>
+</body>
+</html>
